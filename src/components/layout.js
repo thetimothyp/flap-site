@@ -25,11 +25,14 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer
           style={{
-            position: `fixed`,
+            position: `absolute`,
             left: `50%`,
             bottom: `0`,
-            transform: `translate(-50%)`
+            transform: `translate(-50%)`,
+            background: `white`,
+            'text-align': 'center'
           }}>
+          <p style={{'margin-bottom': '0'}}><strong>Contact:</strong> tim@thumbprintgames.com</p>
           <p>© {new Date().getFullYear()} Thumbprint Games</p>
         </footer>
       </div>
